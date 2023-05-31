@@ -9,8 +9,8 @@ internal class Program
         double[] doubleArray = new double[] { 12.76, 22.76, 32.67 };
         char[] charArray = new char[] { 'a', 'g', 'm' };
         DeleteArray deleteArray = new DeleteArray();
-        deleteArray.IntDeleteMethod(intArray, 1);
-        deleteArray.DoubleDeleteMethod(doubleArray, 0);
-        deleteArray.CharacterDeleteMethod(charArray, 2);
+        deleteArray.DeleteMethod(intArray, 1);
+        deleteArray.DeleteMethod(doubleArray, 0);
+        deleteArray.DeleteMethod(charArray, 2);
     }
 }
