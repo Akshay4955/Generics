@@ -8,9 +8,11 @@ internal class Program
         int[] intArray = new int[] {12, 18, 25 };
         double[] doubleArray = new double[] { 12.76, 22.76, 32.67 };
         char[] charArray = new char[] { 'a', 'g', 'm' };
-        DeleteArray deleteArray = new DeleteArray();
+        DeleteArray<int> deleteArray = new DeleteArray<int>();
         deleteArray.DeleteMethod(intArray, 1);
-        deleteArray.DeleteMethod(doubleArray, 0);
-        deleteArray.DeleteMethod(charArray, 2);
+        DeleteArray<double> doubleDeleteArray = new DeleteArray<double>();
+        doubleDeleteArray.DeleteMethod(doubleArray, 0);
+        DeleteArray<char> charDeleteArray = new DeleteArray<char>();
+        charDeleteArray.DeleteMethod(charArray, 2);
     }
 }
