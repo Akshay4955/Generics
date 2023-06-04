@@ -9,6 +9,7 @@ internal class Program
         double[] doubleArray = new double[] { 12.76, 22.76, 32.67 };
         float[] floatArray = new float[] { 13.65f, 17.53f, 11.76f };
         char[] charArray = new char[] { 'a', 'g', 'm' };
+        string[] stringArray = new string[] { "Akshay", "Rahul", "Rupesh" };
         DeleteArray<int> deleteArray = new DeleteArray<int>();
         deleteArray.DeleteMethod(intArray, 1);
         DeleteArray<double> doubleDeleteArray = new DeleteArray<double>();
@@ -19,5 +20,6 @@ internal class Program
         MinimumArray minimumArray = new MinimumArray();
         minimumArray.FindMinimumInt(intArray);
         minimumArray.FindMinimumFloat(floatArray);
+        minimumArray.FindMinimumString(stringArray);
     }
 }
