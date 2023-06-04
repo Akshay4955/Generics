@@ -21,5 +21,9 @@ internal class Program
         minimumArray.FindMinimumInt(intArray);
         minimumArray.FindMinimumFloat(floatArray);
         minimumArray.FindMinimumString(stringArray);
+
+        minimumArray.FindMinimum(intArray);
+        minimumArray.FindMinimum(floatArray);
+        minimumArray.FindMinimum(stringArray);
     }
 }

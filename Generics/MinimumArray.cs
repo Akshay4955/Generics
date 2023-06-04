@@ -40,4 +40,17 @@ public class MinimumArray
 
         Console.WriteLine($"Minimum float number from given three float array is : {minimum}");
     }
+
+    public void FindMinimum<T>(T[] array) where T : IComparable
+    {
+        T minimum;
+        if (array[0].CompareTo(array[1]) < 0 && array[0].CompareTo(array[2]) < 0)
+            minimum = array[0];
+        else if (array[1].CompareTo(array[0]) < 0 && array[1].CompareTo(array[2]) < 0)
+            minimum = array[1];
+        else
+            minimum = array[2];
+
+        Console.WriteLine($"Minimum from given array is : {minimum}");
+    }
 }
