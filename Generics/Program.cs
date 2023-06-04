@@ -14,5 +14,8 @@ internal class Program
         doubleDeleteArray.DeleteMethod(doubleArray, 0);
         DeleteArray<char> charDeleteArray = new DeleteArray<char>();
         charDeleteArray.DeleteMethod(charArray, 2);
+
+        MinimumArray minimumArray = new MinimumArray();
+        minimumArray.FindMinimum(intArray);
     }
 }
